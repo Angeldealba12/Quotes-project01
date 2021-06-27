@@ -3,7 +3,6 @@ import Data from './Quotes.json'
 
 const QuoteBox = () => {
     const [indexQuote, setIndexQuote] = useState(0)
-    console.log(indexQuote)
     return(
         <div className = 'quoteBox'>
                <h4>{Data[indexQuote].quote}</h4>
