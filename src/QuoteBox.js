@@ -14,7 +14,7 @@ const QuoteBox = () => {
         <div className = 'quoteBox'>
 
                 {/*Storing my quotes and authors in a h4 and h5 heading tags*/}
-               <h4>{Data[indexQuote].quote}</h4>
+               <h4><i class="fa fa-quote-left" aria-hidden="true"></i> {Data[indexQuote].quote}</h4>
                <h5>{Data[indexQuote].author}</h5>
                 
                 {/*buttons*/}
