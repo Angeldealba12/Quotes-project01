@@ -4,17 +4,25 @@ import Colors from './Colors.json';
 
 const QuoteBox = () => {
 
+    // varibales of state that are going to help me assing the index of my jsons. 
     const [indexQuote, setIndexQuote] = useState(0)
     const [indexColors, setIndexColors] = useState(0)
+
 
     return(
         <div style={Colors[indexColors]} className="container">
         <div className = 'quoteBox'>
-               <h4 >{Data[indexQuote].quote}</h4>
+
+                {/*Storing my quotes and authors in a h4 and h5 heading tags*/}
+               <h4>{Data[indexQuote].quote}</h4>
                <h5>{Data[indexQuote].author}</h5>
+                
+                {/*buttons*/}
                 <div className = 'twitter'>
-               <button style={Colors[indexColors]} className='button1'><i className="fa fa-twitter"></i></button>
-               </div>
+                <button style={Colors[indexColors]} className='button1'><i className="fa fa-twitter"></i></button>
+                </div>
+
+               {/*Button with onClick function to change quote and color*/}
                <button  style={Colors[indexColors]} className ='button' type = 'button' onClick={() => {
                    setIndexQuote(Math.floor(Math.random()*102))
                    setIndexColors(Math.floor(Math.random()*20))
