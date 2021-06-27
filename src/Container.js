@@ -1,9 +1,10 @@
 import QuoteBox from './QuoteBox';
 
+
 const Container = () => {
     return(
         <div className="container">
-            <QuoteBox />
+         <QuoteBox />
         </div>
     )
 }
