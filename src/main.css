@@ -83,5 +83,21 @@
     .quoteBox h5 {
         font-size: 3rem;
     }
+    .quoteBox .button {
+        width: 20%;
+        height: 5rem;
+        font-size: 2.5rem;
+    }
+
+    .quoteBox .button1 {
+        width: 20%;
+        height: 5rem;
+        padding: 0;
+        border-radius: 50%;
+    }
+
+    .fa-twitter{
+        font-size: 4rem;
+    }
   }
 
