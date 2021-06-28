@@ -14,10 +14,10 @@ const QuoteBox = () => {
         <div className = 'quoteBox'>
 
                 {/*Storing my quotes and authors in a h4 and h5 heading tags*/}
-               <h4><i className="fa fa-quote-left" aria-hidden="true"></i> {Data[indexQuote].quote}</h4>
+               <h4><i className="fa fa-quote-left" aria-hidden="true"></i> {Data[indexQuote].quote} <i class="fa fa-quote-right" aria-hidden="true"></i></h4>
                <h5>{Data[indexQuote].author}</h5>
                 
-                {/*buttons*/}
+                {/*Twitter's button*/}
                 <div className = 'twitter'>
                 <button style={Colors[indexColors]} className='button1'><i className="fa fa-twitter"></i></button>
                 </div>
